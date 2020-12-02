@@ -1,0 +1,25 @@
+CSS:
+
+syntax:
+
+selector {
+    prop1: value;
+    ...
+}
+
+Selectors:
+- element, class, id
+- class starts with .
+- element can only have 1 id, should be unique to the webpage
+
+- can be combined
+    - element.class
+    - #id.class.class....
+    - .class.class
+- children can be styled
+    - selector selector {}
+
+- can use a comma between selectors to share properties
+- * selector is global
+
+pickup here https://youtu.be/r1xBCi5SOjw?t=550
