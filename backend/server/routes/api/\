@@ -1,0 +1,10 @@
+import express from 'express';
+import path from 'path';
+var router = express.Router();
+
+router.get('/', (req, res) => {
+  console.log(path.join('images', 'aaron-burden-dXYE1d08BiY-unsplash.jpg'));
+  res.sendFile(path.join('images', 'aaron-burden-dXYE1d08BiY-unsplash.jpg'));
+});
+
+export default router;
