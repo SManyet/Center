@@ -80,3 +80,15 @@ Write two long-term goals. Brainstorm and write down your ideas for achieving th
 Visualize that you are free from anxiety. Write down the details of this kind of life.
 List 10 things that make you smile.
 List down three affirmations you can say to yourself today.
+
+
+
+
+
+vim:
+- W jump WORD
+  - % matching braces/paren
+    - */# next/previous occurance of word under cursor
+      -num+G jump to line num
+
+
