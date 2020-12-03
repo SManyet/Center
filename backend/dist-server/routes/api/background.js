@@ -16,10 +16,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var router = _express["default"].Router();
 
 router.get('/', function (req, res, next) {
-  var uri = _path["default"].join(__dirname, '../../../public/images');
+  var uri = _path["default"].join(__dirname, '../../../public/images/');
 
   _fs["default"].readdir(uri, function (err, files) {
-    res.json(files);
+    var file = files[Math.floor(files.length * Math.random())];
+    res.sendFile(uri + file);
   });
 });
 var _default = router;

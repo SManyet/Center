@@ -32,6 +32,6 @@ app.use(_express["default"]["static"](_path["default"].join(__dirname, '../publi
 app.use(_express["default"]["static"](_path["default"].join(__dirname, '../public')));
 app.use('/', _index["default"]);
 app.use('/users', _users["default"]);
-app.use('/api/getBackgroundOptions', _background["default"]);
+app.use('/api/background', _background["default"]);
 var _default = app;
 exports["default"] = _default;

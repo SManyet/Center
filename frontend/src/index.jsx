@@ -10,7 +10,7 @@ import NavBar from './components/NavBar/NavBar';
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    <Background url="http://localhost:8080/api/getBackgroundOptions" />
+    <Background url="http://localhost:8080/api/background" />
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -5,9 +5,10 @@ import fs from 'fs';
 var router = express.Router();
 
 router.get('/', (req, res, next) => {
-  const uri = path.join(__dirname, '../../../public/images');
+  const uri = path.join(__dirname, '../../../public/images/');
   fs.readdir(uri, (err, files) => {
-    res.json(files);
+    const file = files[Math.floor(files.length * Math.random())];
+    res.sendFile(uri+file);
   });
 });
 
