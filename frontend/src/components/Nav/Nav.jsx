@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AppBar, Toolbar } from '@material-ui/core';
 
-const NavBar = () => (
+const Nav = () => (
   <AppBar position="static">
     <Toolbar>
       <h1>benis</h1>
@@ -10,4 +10,4 @@ const NavBar = () => (
   </AppBar>
 );
 
-export default NavBar;
+export default Nav;

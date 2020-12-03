@@ -1,16 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 
 import Background from './components/Background/Background';
-import NavBar from './components/NavBar/NavBar';
+// import Nav from './components/Nav/Nav';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar />
-    <Background url="http://localhost:8080/api/background" />
+    <Router>
+      <Background url="http://localhost:8080/api/background" />
+      {/*      <Switch>
+        <Route path="/">
+          <Landing />
+        </Route>
+        <Route>
+          <Library />
+        </Route>
+        <Route>
+          <Settings />
+        </Route>
+      </Switch>
+*/}
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
